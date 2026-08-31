@@ -27,7 +27,7 @@ function CompareCard({
             src={before}
             alt={`${label} — before`}
             loading="lazy"
-            className="absolute inset-0 h-full w-[100vw] max-w-none object-cover"
+            className="absolute inset-0 h-full max-w-none object-cover"
             style={{ width: `${(100 / Math.max(value, 1)) * 100}%` }}
           />
         </div>
