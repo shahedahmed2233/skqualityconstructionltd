@@ -15,7 +15,7 @@ export function Services() {
 
       <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service, i) => {
-          const Icon = icons[i % icons.length];
+          const Icon = icons[i % icons.length]!;
           return (
             <Reveal key={service.title} delay={(i % 3) * 0.08}>
               <a
