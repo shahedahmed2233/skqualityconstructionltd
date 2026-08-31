@@ -1,6 +1,11 @@
 import craft from "@/assets/craft.jpg";
 import about from "@/assets/about.jpg";
 import hero from "@/assets/hero-roof.jpg";
+import roofBefore from "@/assets/ba-roof-before.jpg";
+import roofAfter from "@/assets/ba-roof-after.jpg";
+import brickBefore from "@/assets/ba-brick-before.jpg";
+import brickAfter from "@/assets/ba-brick-after.jpg";
+
 
 export const company = {
   name: "SK Quality Construction Ltd",
@@ -63,10 +68,20 @@ export const projects = [
 
 /** Replace `before` / `after` with your own image imports or /public paths. */
 export const beforeAfter = [
-  { label: "Roof Restoration", before: craft, after: about },
-  { label: "Masonry Pointing", before: about, after: craft },
-  { label: "DOFF Facade Clean", before: hero, after: about },
+  {
+    label: "Project 01 — Roof Restoration",
+    caption: "Weathered tiled roof, cleaned and re-ridged.",
+    before: roofBefore,
+    after: roofAfter,
+  },
+  {
+    label: "Project 02 — Masonry Repointing",
+    caption: "Soiled brickwork cleaned and repointed.",
+    before: brickBefore,
+    after: brickAfter,
+  },
 ];
+
 
 /** Replace `src` with real project photos — the layout adapts automatically. */
 export const gallery = [
