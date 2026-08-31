@@ -12,7 +12,7 @@ export function RecentProjects() {
         light
       />
 
-      <div className="mt-12 grid gap-8">
+      <div className="mt-12 grid gap-6 md:grid-cols-3">
         {projects.map((project, i) => (
           <Reveal key={project.title} delay={i * 0.06}>
             <article className="overflow-hidden rounded-lg border border-ink-foreground/12 bg-ink-foreground/[0.04]">
@@ -40,7 +40,7 @@ export function RecentProjects() {
               <div className="flex flex-wrap items-end justify-between gap-4 border-t border-ink-foreground/10 px-6 py-5 sm:px-8">
                 <div>
                   <p className="eyebrow">{`0${i + 1}`}</p>
-                  <h3 className="mt-2 text-2xl text-ink-foreground">{project.title}</h3>
+                  <h3 className="mt-2 text-xl text-ink-foreground">{project.title}</h3>
                   <p className="mt-1.5 text-sm text-ink-foreground/60">{project.description}</p>
                 </div>
               </div>
